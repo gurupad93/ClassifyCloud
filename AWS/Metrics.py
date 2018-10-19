@@ -1,4 +1,4 @@
-class Metrics:
+class Metrics(object):
     # Metrics class is used to obtain the current state of queue(total number of messages in the queue) 
     # and the total number of instances running.
     
