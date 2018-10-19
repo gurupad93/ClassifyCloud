@@ -1,10 +1,12 @@
-// ScheduleLoadBalancer keeps calling Decidescaling every 5 sedonds to decide the scaling.
+from decide_scaling import DecideScaling
 
+class ScheduleLoadBalancer:
 
-class ScheduleLoadBalancer{
-    //constructor runs iteratively with a delay of 5 secs
-    //Get Metrics
-    //Send metrics to decide scaling.
-}
+    # schedule_load_balancer_task runs iteratively every 5 secs
+    def schedule_load_balancer_task(self):
+
+        # get metrics
+        DecideScaling.decide_scaling()
+
 
 
